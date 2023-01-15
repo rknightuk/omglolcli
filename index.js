@@ -47,7 +47,7 @@ console.log(chalk.hex(Colors.pramiPink).bold(`
 */
 program
     .command('init <address> <apikey>')
-    .description(chalk.hex(Colors.omgYellow).bold('Set your address and api key to access authorised endpoints'))
+    .description(chalk.hex(Colors.omgYellow).bold('Set your address and api key'))
     .action(init)
 
 program
