@@ -3,7 +3,7 @@ import chalk from 'chalk'
 import data from '../../utils/data.js'
 
 const newStatus = async (emoji, status) => {
-    const address = address()
+    const address = data.address()
     const response = await fetch(`https://api.omg.lol/address/${address}/statuses/`, {
         method: 'POST',
         headers: {
