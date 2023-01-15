@@ -70,6 +70,7 @@ program
     .option('-p, --paste', 'Open paste.lol page')
     .option('-m, --mastodon', 'Open profile on social.lol')
     .option('-p, --purls', 'Open url.lol page')
+    .option('-n, --now', 'Open the /now page')
     .action(open)
 
 /**
