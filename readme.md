@@ -8,7 +8,8 @@ ASCII Prami hand crafted by [Sara](https://sarajoy.dev/#sara)
 
 ## Installation
 
-- Clone this repository `git clone https://github.com/rknightuk/omglolcli.git`
+- Clone this repository `git clone https://github.com/rknightuk/omglolapi.git`
+- `cd omglolapi`
 - Install the dependencies `npm i`
 - Install globally `npm i -g`
 - Run `omg init USERNAME APIKEY` first. Get your API from [https://home.omg.lol/account](https://home.omg.lol/account).
