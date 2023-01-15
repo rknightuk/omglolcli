@@ -10,7 +10,7 @@ ASCII Prami hand crafted by [Sara](https://sarajoy.dev/#sara)
 
 - Clone this repository `git clone https://github.com/rknightuk/omglolcli.git`
 - Install the dependencies `npm i`
-- Install globally `npm -i -g`
+- Install globally `npm i -g`
 - Run `omg init USERNAME APIKEY` first. Get your API from [https://home.omg.lol/account](https://home.omg.lol/account).
 
 ## Usage
