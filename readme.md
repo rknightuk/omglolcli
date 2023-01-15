@@ -8,7 +8,7 @@ ASCII Prami hand crafted by [Sara](https://sarajoy.dev/#sara)
 
 ## Installation
 
-- Clone this repository `git clone https://github.com/rknightuk/omglolapi.git`
+- Clone this repository `git clone https://github.com/rknightuk/omglolcli.git`
 - `cd omglolapi`
 - Install the dependencies `npm i`
 - Install globally `npm i -g`
