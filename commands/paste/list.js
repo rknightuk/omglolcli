@@ -24,7 +24,7 @@ const list = async (options) => {
     body.response.pastebin.forEach((paste) => {
         console.log(
             chalk[Colors.get()].bold(`https://${address}.paste.lol/${paste.title}`) +
-            chalk.grey(` ${new Date(paste.modified_on * 1000).toDateString()}`)
+            chalk.grey(` ${new Date(paste.modified_on * 1000).toDateString()} - ${paste.listed ? 'public' : 'private'}`)
         )
     });
 }
