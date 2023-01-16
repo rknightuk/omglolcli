@@ -6,7 +6,14 @@ import Colors from '../../utils/colors.js'
 const list = async (options) => {
     const address = options.address || data.address()
     const path = `https://api.omg.lol/address/${address}/pastebin/`
-    const response = await fetch(path);
+    const fetchOptions = !options.address ? {
+        method: 'GET',
+        headers: {
+            Authorization: `Bearer ${data.apikey()}`,
+            "Content-Type": "application/json"
+        },
+    } : {}
+    const response = await fetch(path, fetchOptions);
     const body = await response.json();
 
     if (!body.response.pastebin.length) {
