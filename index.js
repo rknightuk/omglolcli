@@ -108,6 +108,7 @@ const address = program
 
 address
     .command('list')
+    .option('-g, --garden', 'Show the now.garden directory')
     .description('Show the address directory')
     .action(addressDirectory)
 
