@@ -24,7 +24,11 @@ const openAddress = (address, options) => {
     } else if (options.url)
     {
         path = 'url.lol'
+    } else if (options.now)
+    {
+        path = 'omg.lol/now'
     }
+
 
     opening(`https://${address}.${path}`)
     exec(`open https://${address}.${path}`)
