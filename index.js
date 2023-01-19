@@ -7,6 +7,7 @@ import Colors from './utils/colors.js'
 import init from './commands/init.js'
 import stats from './commands/stats.js'
 import open from './commands/open.js'
+import openDash from './commands/dash.js'
 
 import statusList from './commands/status/list.js'
 import statusNew from './commands/status/new.js'
@@ -69,9 +70,22 @@ program
     .option('-w, --weblog', 'Open weblog.lol page')
     .option('-p, --paste', 'Open paste.lol page')
     .option('-m, --mastodon', 'Open profile on social.lol')
-    .option('-p, --purls', 'Open url.lol page')
+    .option('-u, --url', 'Open url.lol page')
     .option('-n, --now', 'Open the /now page')
     .action(open)
+
+program
+    .command('dash')
+    .description('Open the dashboard page for a specific service')
+    .option('-s, --statuslog', 'Open status.lol page')
+    .option('-w, --weblog', 'Open weblog.lol page')
+    .option('-p, --paste', 'Open paste.lol page')
+    .option('-u, --url', 'Open PURLs page')
+    .option('-n, --now', 'Open the /now page')
+    .option('-e, --email', 'Open the email page')
+    .option('-d, --dns', 'Open the DNS page')
+    .option('-sw, --switchboard', 'Open the switchboard page')
+    .action(openDash)
 
 /**
  * Statuses
